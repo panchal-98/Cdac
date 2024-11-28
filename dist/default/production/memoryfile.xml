@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="dist/default/production/updated_sinewave_ups.X.production.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>8192</length>
+      <used>60</used>
+      <free>8132</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>35712</length>
+      <used>14259</used>
+      <free>21453</free>
+    </memory>
+  </executable>
+</project>
