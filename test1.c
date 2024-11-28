@@ -2,5 +2,5 @@
 
 void int()
 {
-        printf("weryuuiop");
+        printf("welcome");
 }
