@@ -102,12 +102,12 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x5c4           0x8a6  (2214)
-.const                       0x7c4               0x7b2           0xb8b  (2955)
-.text                        0xf76              0x16c8          0x222c  (8748)
-.dinit                      0x263e                0x3c            0x5a  (90)
-.text                       0x267a                0xa8            0xfc  (252)
+.const                       0x7c4               0x4fa           0x777  (1911)
+.text                        0xcbe              0x16c8          0x222c  (8748)
+.dinit                      0x2386                0x3c            0x5a  (90)
+.text                       0x23c2                0xa8            0xfc  (252)
 
-                 Total "program" memory used (bytes):         0x37b3  (14259) 39%
+                 Total "program" memory used (bytes):         0x339f  (13215) 37%
 
 
 "data" Memory  [Origin = 0x1000, Length = 0x2000]
@@ -162,191 +162,191 @@ External Symbols in Program Memory (by address):
                   0x00079e                  __DefaultInterrupt
                   0x0007a4                  ___udivsi3
                   0x0007c4                  _sineTable
-                  0x000b2c                  _sineTable2
-                  0x000e94                  _PWM_HS
-                  0x000ef8                  _adc1Multicore
-                  0x000f0e                  _ADC1
-                  0x000f30                  _UART1_Drv
-                  0x000f62                  _Timer1
-                  0x000f76                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEnable
-                  0x000f92                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorDisable
-                  0x000fae                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_ModeSet
-                  0x001024                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Enable
-                  0x00102e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Disable
-                  0x001038                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPeriodSet
-                  0x001044                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterDutyCycleSet
-                  0x001050                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPhaseSet
-                  0x00105c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PeriodSet
-                  0x00107e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DutyCycleSet
-                  0x0010a0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSelect
-                  0x0010e2                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSet
-                  0x001104                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataSet
-                  0x00114a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataHighSet
-                  0x0011ac                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataLowSet
-                  0x001202                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataGet
-                  0x001234                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighEnable
-                  0x001250                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowEnable
-                  0x00126c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighDisable
-                  0x001288                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowDisable
-                  0x0012a4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeLowSet
-                  0x0012c6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeHighSet
-                  0x0012e8                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeSet
-                  0x001312                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCompareValueSet
-                  0x001334                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptEnable
-                  0x0013a4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptDisable
-                  0x001414                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusClear
-                  0x001484                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusGet
-                  0x00157c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdateRequest
-                  0x001598                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdatePending
-                  0x0015da                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerACompareValueSet
-                  0x0015fc                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerBCompareValueSet
-                  0x00161e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCCompareValueSet
-                  0x001640                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Enable
-                  0x001692                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Disable
-                  0x0016e4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Enable
-                  0x001736                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Disable
-                  0x001788                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_FaultModeLatchClear
-                  0x0017a4                  _PWM_Initialize
-                  0x001868                  _PWM_Deinitialize
-                  0x001906                  _PWM_GeneratorEOCEventCallbackRegister
-                  0x001920                  _PWM_GeneratorTasks
-                  0x00196a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Enable
-                  0x001972                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Disable
-                  0x00197a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerEnable
-                  0x001982                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerDisable
-                  0x00198a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ChannelSelect
-                  0x001992                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ConversionResultGet
-                  0x0019dc                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IsConversionComplete
-                  0x001a6c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ResolutionSet
-                  0x001a8a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptEnable
-                  0x001a92                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptDisable
-                  0x001a9a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptFlagClear
-                  0x001aa2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptPrioritySet
-                  0x001ac4                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptEnable
-                  0x001b08                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptDisable
-                  0x001b4c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptFlagClear
-                  0x001b86                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptPrioritySet
-                  0x001c24                  _ADC1_Initialize
-                  0x001cde                  _ADC1_Deinitialize
-                  0x001d74                  _ADC1_SharedCorePowerEnable
-                  0x001e1c                  _ADC1_PWMTriggerSourceSet
-                  0x001ec0                  _ADC1_CommonCallbackRegister
-                  0x001ef4                  _ADC1_ChannelCallbackRegister
-                  0x001fec                  _ADC1_ComparatorCallbackRegister
-                  0x002006                  _UART1_Initialize
-                  0x002026                  _UART1_Deinitialize
-                  0x00203c                  _UART1_Read
-                  0x00205a                  _UART1_Write
-                  0x002070                  _UART1_IsRxReady
-                  0x002084                  _UART1_IsTxReady
-                  0x0020a4                  _UART1_IsTxDone
-                  0x0020c6                  _UART1_TransmitEnable
-                  0x0020ce                  _UART1_TransmitDisable
-                  0x0020d6                  _UART1_AutoBaudSet
-                  0x0020fc                  _UART1_AutoBaudQuery
-                  0x002114                  _UART1_AutoBaudEventEnableGet
-                  0x00212c                  _UART1_ErrorGet
-                  0x002186                  _UART1_BRGCountSet
-                  0x00219c                  _UART1_BRGCountGet
-                  0x0021b8                  _UART1_BaudRateSet
-                  0x00221a                  _UART1_BaudRateGet
-                  0x00233c                  _RESET_CauseGet
-                  0x002396                  _RESET_CauseClearAll
-                  0x0023b6                  _DMT_Initialize
-                  0x0023c8                  _DMT_Enable
-                  0x0023d2                  _DMT_PreClear
-                  0x0023e0                  _DMT_Clear
-                  0x0023f6                  _DMT_IsWindowOpen
-                  0x002410                  _DMT_IsPreCleared
-                  0x002418                  _DMT_TimeoutCounterGet
-                  0x002436                  _DMT_WindowTimeoutCounterGet
-                  0x002454                  _DMT_StatusGet
-                  0x002466                  _DMT_CounterGet
-                  0x002484                  _DMT_EventCallbackRegister
-                  0x00249c                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_PeriodGet
-                  0x0024a6                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_CounterGet
-                  0x0024b0                  _TMR1_Initialize
-                  0x0024c4                  _TMR1_Deinitialize
-                  0x0024d2                  _TMR1_Start
-                  0x0024de                  _TMR1_Stop
-                  0x0024e8                  _TMR1_PeriodSet
-                  0x0024f4                  _TMR1_InterruptPrioritySet
-                  0x002512                  _TMR1_TimeoutCallbackRegister
-                  0x00252a                  _TMR1_PeriodCountSet
-                  0x002558                  _Timer_Callback
-                  0x00259e                  _main
-                  0x0025ac                  _PINS_Initialize
-                  0x0025f6                  _CLOCK_Initialize
-                  0x00267c                  _DMT_CalibratedCounterGet
-                  0x002690                  _DMT_Calibrate
-                  0x0026ae                  _INTERRUPT_Initialize
-                  0x0026c8                  _INTERRUPT_Deinitialize
-                  0x0026ee                  _SYSTEM_Initialize
+                  0x0009d0                  _sineTable2
+                  0x000bdc                  _PWM_HS
+                  0x000c40                  _adc1Multicore
+                  0x000c56                  _ADC1
+                  0x000c78                  _UART1_Drv
+                  0x000caa                  _Timer1
+                  0x000cbe                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEnable
+                  0x000cda                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorDisable
+                  0x000cf6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_ModeSet
+                  0x000d6c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Enable
+                  0x000d76                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Disable
+                  0x000d80                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPeriodSet
+                  0x000d8c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterDutyCycleSet
+                  0x000d98                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPhaseSet
+                  0x000da4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PeriodSet
+                  0x000dc6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DutyCycleSet
+                  0x000de8                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSelect
+                  0x000e2a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSet
+                  0x000e4c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataSet
+                  0x000e92                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataHighSet
+                  0x000ef4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataLowSet
+                  0x000f4a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataGet
+                  0x000f7c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighEnable
+                  0x000f98                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowEnable
+                  0x000fb4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighDisable
+                  0x000fd0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowDisable
+                  0x000fec                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeLowSet
+                  0x00100e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeHighSet
+                  0x001030                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeSet
+                  0x00105a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCompareValueSet
+                  0x00107c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptEnable
+                  0x0010ec                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptDisable
+                  0x00115c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusClear
+                  0x0011cc                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusGet
+                  0x0012c4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdateRequest
+                  0x0012e0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdatePending
+                  0x001322                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerACompareValueSet
+                  0x001344                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerBCompareValueSet
+                  0x001366                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCCompareValueSet
+                  0x001388                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Enable
+                  0x0013da                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Disable
+                  0x00142c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Enable
+                  0x00147e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Disable
+                  0x0014d0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_FaultModeLatchClear
+                  0x0014ec                  _PWM_Initialize
+                  0x0015b0                  _PWM_Deinitialize
+                  0x00164e                  _PWM_GeneratorEOCEventCallbackRegister
+                  0x001668                  _PWM_GeneratorTasks
+                  0x0016b2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Enable
+                  0x0016ba                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Disable
+                  0x0016c2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerEnable
+                  0x0016ca                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerDisable
+                  0x0016d2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ChannelSelect
+                  0x0016da                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ConversionResultGet
+                  0x001724                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IsConversionComplete
+                  0x0017b4                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ResolutionSet
+                  0x0017d2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptEnable
+                  0x0017da                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptDisable
+                  0x0017e2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptFlagClear
+                  0x0017ea                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptPrioritySet
+                  0x00180c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptEnable
+                  0x001850                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptDisable
+                  0x001894                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptFlagClear
+                  0x0018ce                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptPrioritySet
+                  0x00196c                  _ADC1_Initialize
+                  0x001a26                  _ADC1_Deinitialize
+                  0x001abc                  _ADC1_SharedCorePowerEnable
+                  0x001b64                  _ADC1_PWMTriggerSourceSet
+                  0x001c08                  _ADC1_CommonCallbackRegister
+                  0x001c3c                  _ADC1_ChannelCallbackRegister
+                  0x001d34                  _ADC1_ComparatorCallbackRegister
+                  0x001d4e                  _UART1_Initialize
+                  0x001d6e                  _UART1_Deinitialize
+                  0x001d84                  _UART1_Read
+                  0x001da2                  _UART1_Write
+                  0x001db8                  _UART1_IsRxReady
+                  0x001dcc                  _UART1_IsTxReady
+                  0x001dec                  _UART1_IsTxDone
+                  0x001e0e                  _UART1_TransmitEnable
+                  0x001e16                  _UART1_TransmitDisable
+                  0x001e1e                  _UART1_AutoBaudSet
+                  0x001e44                  _UART1_AutoBaudQuery
+                  0x001e5c                  _UART1_AutoBaudEventEnableGet
+                  0x001e74                  _UART1_ErrorGet
+                  0x001ece                  _UART1_BRGCountSet
+                  0x001ee4                  _UART1_BRGCountGet
+                  0x001f00                  _UART1_BaudRateSet
+                  0x001f62                  _UART1_BaudRateGet
+                  0x002084                  _RESET_CauseGet
+                  0x0020de                  _RESET_CauseClearAll
+                  0x0020fe                  _DMT_Initialize
+                  0x002110                  _DMT_Enable
+                  0x00211a                  _DMT_PreClear
+                  0x002128                  _DMT_Clear
+                  0x00213e                  _DMT_IsWindowOpen
+                  0x002158                  _DMT_IsPreCleared
+                  0x002160                  _DMT_TimeoutCounterGet
+                  0x00217e                  _DMT_WindowTimeoutCounterGet
+                  0x00219c                  _DMT_StatusGet
+                  0x0021ae                  _DMT_CounterGet
+                  0x0021cc                  _DMT_EventCallbackRegister
+                  0x0021e4                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_PeriodGet
+                  0x0021ee                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_CounterGet
+                  0x0021f8                  _TMR1_Initialize
+                  0x00220c                  _TMR1_Deinitialize
+                  0x00221a                  _TMR1_Start
+                  0x002226                  _TMR1_Stop
+                  0x002230                  _TMR1_PeriodSet
+                  0x00223c                  _TMR1_InterruptPrioritySet
+                  0x00225a                  _TMR1_TimeoutCallbackRegister
+                  0x002272                  _TMR1_PeriodCountSet
+                  0x0022a0                  _Timer_Callback
+                  0x0022e6                  _main
+                  0x0022f4                  _PINS_Initialize
+                  0x00233e                  _CLOCK_Initialize
+                  0x0023c4                  _DMT_CalibratedCounterGet
+                  0x0023d8                  _DMT_Calibrate
+                  0x0023f6                  _INTERRUPT_Initialize
+                  0x002410                  _INTERRUPT_Deinitialize
+                  0x002436                  _SYSTEM_Initialize
                   0x005f00                  __FSEC.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x000f0e                  _ADC1
-                  0x001ef4                  _ADC1_ChannelCallbackRegister
-                  0x001ec0                  _ADC1_CommonCallbackRegister
-                  0x001fec                  _ADC1_ComparatorCallbackRegister
-                  0x001cde                  _ADC1_Deinitialize
-                  0x001c24                  _ADC1_Initialize
-                  0x001e1c                  _ADC1_PWMTriggerSourceSet
-                  0x001d74                  _ADC1_SharedCorePowerEnable
-                  0x0025f6                  _CLOCK_Initialize
-                  0x002690                  _DMT_Calibrate
-                  0x00267c                  _DMT_CalibratedCounterGet
-                  0x0023e0                  _DMT_Clear
-                  0x002466                  _DMT_CounterGet
-                  0x0023c8                  _DMT_Enable
-                  0x002484                  _DMT_EventCallbackRegister
-                  0x0023b6                  _DMT_Initialize
-                  0x002410                  _DMT_IsPreCleared
-                  0x0023f6                  _DMT_IsWindowOpen
-                  0x0023d2                  _DMT_PreClear
-                  0x002454                  _DMT_StatusGet
-                  0x002418                  _DMT_TimeoutCounterGet
-                  0x002436                  _DMT_WindowTimeoutCounterGet
-                  0x0026c8                  _INTERRUPT_Deinitialize
-                  0x0026ae                  _INTERRUPT_Initialize
-                  0x0025ac                  _PINS_Initialize
-                  0x001868                  _PWM_Deinitialize
-                  0x001906                  _PWM_GeneratorEOCEventCallbackRegister
-                  0x001920                  _PWM_GeneratorTasks
-                  0x000e94                  _PWM_HS
-                  0x0017a4                  _PWM_Initialize
-                  0x002396                  _RESET_CauseClearAll
-                  0x00233c                  _RESET_CauseGet
-                  0x0026ee                  _SYSTEM_Initialize
-                  0x0024c4                  _TMR1_Deinitialize
-                  0x0024b0                  _TMR1_Initialize
-                  0x0024f4                  _TMR1_InterruptPrioritySet
-                  0x00252a                  _TMR1_PeriodCountSet
-                  0x0024e8                  _TMR1_PeriodSet
-                  0x0024d2                  _TMR1_Start
-                  0x0024de                  _TMR1_Stop
-                  0x002512                  _TMR1_TimeoutCallbackRegister
-                  0x000f62                  _Timer1
-                  0x002558                  _Timer_Callback
-                  0x002114                  _UART1_AutoBaudEventEnableGet
-                  0x0020fc                  _UART1_AutoBaudQuery
-                  0x0020d6                  _UART1_AutoBaudSet
-                  0x00219c                  _UART1_BRGCountGet
-                  0x002186                  _UART1_BRGCountSet
-                  0x00221a                  _UART1_BaudRateGet
-                  0x0021b8                  _UART1_BaudRateSet
-                  0x002026                  _UART1_Deinitialize
-                  0x000f30                  _UART1_Drv
-                  0x00212c                  _UART1_ErrorGet
-                  0x002006                  _UART1_Initialize
-                  0x002070                  _UART1_IsRxReady
-                  0x0020a4                  _UART1_IsTxDone
-                  0x002084                  _UART1_IsTxReady
-                  0x00203c                  _UART1_Read
-                  0x0020ce                  _UART1_TransmitDisable
-                  0x0020c6                  _UART1_TransmitEnable
-                  0x00205a                  _UART1_Write
+                  0x000c56                  _ADC1
+                  0x001c3c                  _ADC1_ChannelCallbackRegister
+                  0x001c08                  _ADC1_CommonCallbackRegister
+                  0x001d34                  _ADC1_ComparatorCallbackRegister
+                  0x001a26                  _ADC1_Deinitialize
+                  0x00196c                  _ADC1_Initialize
+                  0x001b64                  _ADC1_PWMTriggerSourceSet
+                  0x001abc                  _ADC1_SharedCorePowerEnable
+                  0x00233e                  _CLOCK_Initialize
+                  0x0023d8                  _DMT_Calibrate
+                  0x0023c4                  _DMT_CalibratedCounterGet
+                  0x002128                  _DMT_Clear
+                  0x0021ae                  _DMT_CounterGet
+                  0x002110                  _DMT_Enable
+                  0x0021cc                  _DMT_EventCallbackRegister
+                  0x0020fe                  _DMT_Initialize
+                  0x002158                  _DMT_IsPreCleared
+                  0x00213e                  _DMT_IsWindowOpen
+                  0x00211a                  _DMT_PreClear
+                  0x00219c                  _DMT_StatusGet
+                  0x002160                  _DMT_TimeoutCounterGet
+                  0x00217e                  _DMT_WindowTimeoutCounterGet
+                  0x002410                  _INTERRUPT_Deinitialize
+                  0x0023f6                  _INTERRUPT_Initialize
+                  0x0022f4                  _PINS_Initialize
+                  0x0015b0                  _PWM_Deinitialize
+                  0x00164e                  _PWM_GeneratorEOCEventCallbackRegister
+                  0x001668                  _PWM_GeneratorTasks
+                  0x000bdc                  _PWM_HS
+                  0x0014ec                  _PWM_Initialize
+                  0x0020de                  _RESET_CauseClearAll
+                  0x002084                  _RESET_CauseGet
+                  0x002436                  _SYSTEM_Initialize
+                  0x00220c                  _TMR1_Deinitialize
+                  0x0021f8                  _TMR1_Initialize
+                  0x00223c                  _TMR1_InterruptPrioritySet
+                  0x002272                  _TMR1_PeriodCountSet
+                  0x002230                  _TMR1_PeriodSet
+                  0x00221a                  _TMR1_Start
+                  0x002226                  _TMR1_Stop
+                  0x00225a                  _TMR1_TimeoutCallbackRegister
+                  0x000caa                  _Timer1
+                  0x0022a0                  _Timer_Callback
+                  0x001e5c                  _UART1_AutoBaudEventEnableGet
+                  0x001e44                  _UART1_AutoBaudQuery
+                  0x001e1e                  _UART1_AutoBaudSet
+                  0x001ee4                  _UART1_BRGCountGet
+                  0x001ece                  _UART1_BRGCountSet
+                  0x001f62                  _UART1_BaudRateGet
+                  0x001f00                  _UART1_BaudRateSet
+                  0x001d6e                  _UART1_Deinitialize
+                  0x000c78                  _UART1_Drv
+                  0x001e74                  _UART1_ErrorGet
+                  0x001d4e                  _UART1_Initialize
+                  0x001db8                  _UART1_IsRxReady
+                  0x001dec                  _UART1_IsTxDone
+                  0x001dcc                  _UART1_IsTxReady
+                  0x001d84                  _UART1_Read
+                  0x001e16                  _UART1_TransmitDisable
+                  0x001e0e                  _UART1_TransmitEnable
+                  0x001da2                  _UART1_Write
                   0x00068a                  __AddressError
                   0x000758                  __DMTInterrupt
                   0x00079e                  __DefaultInterrupt
@@ -362,66 +362,66 @@ External Symbols in Program Memory (by name):
                   0x000248                  __data_init_extended
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x000ef8                  _adc1Multicore
-                  0x00259e                  _main
+                  0x000c40                  _adc1Multicore
+                  0x0022e6                  _main
                   0x0007c4                  _sineTable
-                  0x000b2c                  _sineTable2
-                  0x00198a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ChannelSelect
-                  0x001992                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ConversionResultGet
-                  0x001972                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Disable
-                  0x00196a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Enable
-                  0x001b08                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptDisable
-                  0x001ac4                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptEnable
-                  0x001b4c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptFlagClear
-                  0x001b86                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptPrioritySet
-                  0x001a92                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptDisable
-                  0x001a8a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptEnable
-                  0x001a9a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptFlagClear
-                  0x001aa2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptPrioritySet
-                  0x0019dc                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IsConversionComplete
-                  0x001a6c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ResolutionSet
-                  0x001982                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerDisable
-                  0x00197a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerEnable
-                  0x0012c6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeHighSet
-                  0x0012a4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeLowSet
-                  0x0012e8                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeSet
-                  0x00102e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Disable
-                  0x00107e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DutyCycleSet
-                  0x001024                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Enable
-                  0x001788                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_FaultModeLatchClear
-                  0x000f92                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorDisable
-                  0x000f76                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEnable
-                  0x001414                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusClear
-                  0x001484                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusGet
-                  0x0013a4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptDisable
-                  0x001334                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptEnable
-                  0x001044                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterDutyCycleSet
-                  0x001038                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPeriodSet
-                  0x001050                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPhaseSet
-                  0x000fae                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_ModeSet
-                  0x001202                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataGet
-                  0x00114a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataHighSet
-                  0x0011ac                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataLowSet
-                  0x001104                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataSet
-                  0x00126c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighDisable
-                  0x001234                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighEnable
-                  0x001288                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowDisable
-                  0x001250                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowEnable
-                  0x00105c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PeriodSet
-                  0x0010a0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSelect
-                  0x0010e2                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSet
-                  0x001598                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdatePending
-                  0x00157c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdateRequest
-                  0x001692                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Disable
-                  0x001640                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Enable
-                  0x001736                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Disable
-                  0x0016e4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Enable
-                  0x0015da                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerACompareValueSet
-                  0x0015fc                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerBCompareValueSet
-                  0x00161e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCCompareValueSet
-                  0x001312                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCompareValueSet
-                  0x0024a6                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_CounterGet
-                  0x00249c                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_PeriodGet
+                  0x0009d0                  _sineTable2
+                  0x0016d2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ChannelSelect
+                  0x0016da                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ConversionResultGet
+                  0x0016ba                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Disable
+                  0x0016b2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Enable
+                  0x001850                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptDisable
+                  0x00180c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptEnable
+                  0x001894                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptFlagClear
+                  0x0018ce                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptPrioritySet
+                  0x0017da                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptDisable
+                  0x0017d2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptEnable
+                  0x0017e2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptFlagClear
+                  0x0017ea                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptPrioritySet
+                  0x001724                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IsConversionComplete
+                  0x0017b4                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ResolutionSet
+                  0x0016ca                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerDisable
+                  0x0016c2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerEnable
+                  0x00100e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeHighSet
+                  0x000fec                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeLowSet
+                  0x001030                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeSet
+                  0x000d76                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Disable
+                  0x000dc6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DutyCycleSet
+                  0x000d6c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Enable
+                  0x0014d0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_FaultModeLatchClear
+                  0x000cda                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorDisable
+                  0x000cbe                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEnable
+                  0x00115c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusClear
+                  0x0011cc                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusGet
+                  0x0010ec                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptDisable
+                  0x00107c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptEnable
+                  0x000d8c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterDutyCycleSet
+                  0x000d80                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPeriodSet
+                  0x000d98                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPhaseSet
+                  0x000cf6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_ModeSet
+                  0x000f4a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataGet
+                  0x000e92                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataHighSet
+                  0x000ef4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataLowSet
+                  0x000e4c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataSet
+                  0x000fb4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighDisable
+                  0x000f7c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighEnable
+                  0x000fd0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowDisable
+                  0x000f98                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowEnable
+                  0x000da4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PeriodSet
+                  0x000de8                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSelect
+                  0x000e2a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSet
+                  0x0012e0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdatePending
+                  0x0012c4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdateRequest
+                  0x0013da                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Disable
+                  0x001388                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Enable
+                  0x00147e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Disable
+                  0x00142c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Enable
+                  0x001322                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerACompareValueSet
+                  0x001344                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerBCompareValueSet
+                  0x001366                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCCompareValueSet
+                  0x00105a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCompareValueSet
+                  0x0021ee                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_CounterGet
+                  0x0021e4                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_PeriodGet
 
 Memory Configuration
 
@@ -625,7 +625,7 @@ __FALTREG
  .debug_abbrev    0x000e17        0x1b6 build/default/production/main.o
  .debug_abbrev    0x000fcd         0x14 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.CH_o)
 
-.debug_line       0x000000       0x18eb
+.debug_line       0x000000       0x18ea
  *(.debug_line)
  .debug_line      0x000000        0x431 build/default/production/mcc_generated_files/adc/src/adc1.o
  .debug_line      0x000431        0x49a build/default/production/mcc_generated_files/pwm_hs/src/pwm.o
@@ -640,8 +640,8 @@ __FALTREG
  .debug_line      0x0011eb        0x12f build/default/production/mcc_generated_files/system/src/interrupt.o
  .debug_line      0x00131a        0x1ec build/default/production/mcc_generated_files/timer/src/tmr1.o
  .debug_line      0x001506        0x1d4 build/default/production/mcc_generated_files/uart/src/uart1.o
- .debug_line      0x0016da        0x1cc build/default/production/main.o
- .debug_line      0x0018a6         0x45 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.CH_o)
+ .debug_line      0x0016da        0x1cb build/default/production/main.o
+ .debug_line      0x0018a5         0x45 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(udivsi3.CH_o)
 
 .debug_frame      0x000000       0x123a
  *(.debug_frame)
@@ -2999,160 +2999,160 @@ __c30_signature
  .ivt._T1Interrupt
                   0x000016          0x2 build/default/production/mcc_generated_files/timer/src/tmr1.o
 
-.const              0x87c4        0x7b2 load address 0x0007c4  
- .const             0x87c4        0x6d0 build/default/production/main.o
+.const              0x87c4        0x4fa load address 0x0007c4  
+ .const             0x87c4        0x418 build/default/production/main.o
                     0x87c4                  _sineTable
-                    0x8b2c                  _sineTable2
- .const             0x8e94         0x64 build/default/production/mcc_generated_files/pwm_hs/src/pwm.o
-                    0x8e94                  _PWM_HS
- .const             0x8ef8         0x38 build/default/production/mcc_generated_files/adc/src/adc1.o
-                    0x8ef8                  _adc1Multicore
-                    0x8f0e                  _ADC1
- .const             0x8f30         0x32 build/default/production/mcc_generated_files/uart/src/uart1.o
-                    0x8f30                  _UART1_Drv
- .const             0x8f62         0x14 build/default/production/mcc_generated_files/timer/src/tmr1.o
-                    0x8f62                  _Timer1
+                    0x89d0                  _sineTable2
+ .const             0x8bdc         0x64 build/default/production/mcc_generated_files/pwm_hs/src/pwm.o
+                    0x8bdc                  _PWM_HS
+ .const             0x8c40         0x38 build/default/production/mcc_generated_files/adc/src/adc1.o
+                    0x8c40                  _adc1Multicore
+                    0x8c56                  _ADC1
+ .const             0x8c78         0x32 build/default/production/mcc_generated_files/uart/src/uart1.o
+                    0x8c78                  _UART1_Drv
+ .const             0x8caa         0x14 build/default/production/mcc_generated_files/timer/src/tmr1.o
+                    0x8caa                  _Timer1
 
-.text             0x000f76       0x16c8
- .text            0x000f76        0x9f4 build/default/production/mcc_generated_files/pwm_hs/src/pwm.o
-                  0x000f76                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEnable
-                  0x000f92                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorDisable
-                  0x000fae                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_ModeSet
-                  0x001024                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Enable
-                  0x00102e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Disable
-                  0x001038                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPeriodSet
-                  0x001044                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterDutyCycleSet
-                  0x001050                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPhaseSet
-                  0x00105c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PeriodSet
-                  0x00107e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DutyCycleSet
-                  0x0010a0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSelect
-                  0x0010e2                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSet
-                  0x001104                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataSet
-                  0x00114a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataHighSet
-                  0x0011ac                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataLowSet
-                  0x001202                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataGet
-                  0x001234                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighEnable
-                  0x001250                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowEnable
-                  0x00126c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighDisable
-                  0x001288                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowDisable
-                  0x0012a4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeLowSet
-                  0x0012c6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeHighSet
-                  0x0012e8                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeSet
-                  0x001312                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCompareValueSet
-                  0x001334                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptEnable
-                  0x0013a4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptDisable
-                  0x001414                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusClear
-                  0x001484                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusGet
-                  0x00157c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdateRequest
-                  0x001598                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdatePending
-                  0x0015da                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerACompareValueSet
-                  0x0015fc                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerBCompareValueSet
-                  0x00161e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCCompareValueSet
-                  0x001640                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Enable
-                  0x001692                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Disable
-                  0x0016e4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Enable
-                  0x001736                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Disable
-                  0x001788                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_FaultModeLatchClear
-                  0x0017a4                  _PWM_Initialize
-                  0x001868                  _PWM_Deinitialize
-                  0x001906                  _PWM_GeneratorEOCEventCallbackRegister
-                  0x001918                  _PWM_GeneratorEOCEventCallback
-                  0x001920                  _PWM_GeneratorTasks
- .text            0x00196a        0x69c build/default/production/mcc_generated_files/adc/src/adc1.o
-                  0x00196a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Enable
-                  0x001972                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Disable
-                  0x00197a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerEnable
-                  0x001982                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerDisable
-                  0x00198a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ChannelSelect
-                  0x001992                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ConversionResultGet
-                  0x0019dc                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IsConversionComplete
-                  0x001a6c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ResolutionSet
-                  0x001a8a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptEnable
-                  0x001a92                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptDisable
-                  0x001a9a                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptFlagClear
-                  0x001aa2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptPrioritySet
-                  0x001ac4                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptEnable
-                  0x001b08                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptDisable
-                  0x001b4c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptFlagClear
-                  0x001b86                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptPrioritySet
-                  0x001c24                  _ADC1_Initialize
-                  0x001cde                  _ADC1_Deinitialize
-                  0x001d74                  _ADC1_SharedCorePowerEnable
-                  0x001e1c                  _ADC1_PWMTriggerSourceSet
-                  0x001ec0                  _ADC1_CommonCallbackRegister
-                  0x001ed2                  _ADC1_CommonCallback
-                  0x001ed8                  _ADC1_Tasks
-                  0x001ef4                  _ADC1_ChannelCallbackRegister
-                  0x001f06                  _ADC1_ChannelCallback
-                  0x001f10                  _ADC1_ChannelTasks
-                  0x001fec                  _ADC1_ComparatorCallbackRegister
-                  0x001ffe                  _ADC1_ComparatorCallback
- .text            0x002006        0x284 build/default/production/mcc_generated_files/uart/src/uart1.o
-                  0x002006                  _UART1_Initialize
-                  0x002026                  _UART1_Deinitialize
-                  0x00203c                  _UART1_Read
-                  0x00205a                  _UART1_Write
-                  0x002070                  _UART1_IsRxReady
-                  0x002084                  _UART1_IsTxReady
-                  0x0020a4                  _UART1_IsTxDone
-                  0x0020c6                  _UART1_TransmitEnable
-                  0x0020ce                  _UART1_TransmitDisable
-                  0x0020d6                  _UART1_AutoBaudSet
-                  0x0020fc                  _UART1_AutoBaudQuery
-                  0x002114                  _UART1_AutoBaudEventEnableGet
-                  0x00212c                  _UART1_ErrorGet
-                  0x002186                  _UART1_BRGCountSet
-                  0x00219c                  _UART1_BRGCountGet
-                  0x0021b8                  _UART1_BaudRateSet
-                  0x00221a                  _UART1_BaudRateGet
- .text            0x00228a        0x114 build/default/production/mcc_generated_files/system/src/reset.o
-                  0x00233c                  _RESET_CauseGet
-                  0x002344                  _RESET_CauseHandler
-                  0x002396                  _RESET_CauseClearAll
- .text            0x00239e         0xfe build/default/production/mcc_generated_files/system/src/dmt.o
-                  0x0023b6                  _DMT_Initialize
-                  0x0023c8                  _DMT_Enable
-                  0x0023d2                  _DMT_PreClear
-                  0x0023e0                  _DMT_Clear
-                  0x0023f6                  _DMT_IsWindowOpen
-                  0x002410                  _DMT_IsPreCleared
-                  0x002418                  _DMT_TimeoutCounterGet
-                  0x002436                  _DMT_WindowTimeoutCounterGet
-                  0x002454                  _DMT_StatusGet
-                  0x002466                  _DMT_CounterGet
-                  0x002484                  _DMT_EventCallbackRegister
-                  0x002496                  _DMT_EventCallback
- .text            0x00249c         0x9a build/default/production/mcc_generated_files/timer/src/tmr1.o
-                  0x00249c                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_PeriodGet
-                  0x0024a6                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_CounterGet
-                  0x0024b0                  _TMR1_Initialize
-                  0x0024c4                  _TMR1_Deinitialize
-                  0x0024d2                  _TMR1_Start
-                  0x0024de                  _TMR1_Stop
-                  0x0024e8                  _TMR1_PeriodSet
-                  0x0024f4                  _TMR1_InterruptPrioritySet
-                  0x002512                  _TMR1_TimeoutCallbackRegister
-                  0x002524                  _TMR1_TimeoutCallback
-                  0x00252a                  _TMR1_PeriodCountSet
- .text            0x002536         0x76 build/default/production/main.o
-                  0x002558                  _Timer_Callback
-                  0x00259e                  _main
- .text            0x0025ac         0x4a build/default/production/mcc_generated_files/system/src/pins.o
-                  0x0025ac                  _PINS_Initialize
- .text            0x0025f6         0x48 build/default/production/mcc_generated_files/system/src/clock.o
-                  0x0025f6                  _CLOCK_Initialize
+.text             0x000cbe       0x16c8
+ .text            0x000cbe        0x9f4 build/default/production/mcc_generated_files/pwm_hs/src/pwm.o
+                  0x000cbe                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEnable
+                  0x000cda                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorDisable
+                  0x000cf6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_ModeSet
+                  0x000d6c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Enable
+                  0x000d76                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Disable
+                  0x000d80                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPeriodSet
+                  0x000d8c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterDutyCycleSet
+                  0x000d98                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_MasterPhaseSet
+                  0x000da4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PeriodSet
+                  0x000dc6                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DutyCycleSet
+                  0x000de8                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSelect
+                  0x000e2a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_PhaseSet
+                  0x000e4c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataSet
+                  0x000e92                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataHighSet
+                  0x000ef4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataLowSet
+                  0x000f4a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideDataGet
+                  0x000f7c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighEnable
+                  0x000f98                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowEnable
+                  0x000fb4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideHighDisable
+                  0x000fd0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_OverrideLowDisable
+                  0x000fec                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeLowSet
+                  0x00100e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeHighSet
+                  0x001030                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_DeadTimeSet
+                  0x00105a                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCompareValueSet
+                  0x00107c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptEnable
+                  0x0010ec                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorInterruptDisable
+                  0x00115c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusClear
+                  0x0011cc                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_GeneratorEventStatusGet
+                  0x0012c4                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdateRequest
+                  0x0012e0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_SoftwareUpdatePending
+                  0x001322                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerACompareValueSet
+                  0x001344                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerBCompareValueSet
+                  0x001366                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_TriggerCCompareValueSet
+                  0x001388                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Enable
+                  0x0013da                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger1Disable
+                  0x00142c                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Enable
+                  0x00147e                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_Trigger2Disable
+                  0x0014d0                  build/default/production/mcc_generated_files/pwm_hs/src/pwm.o:_PWM_FaultModeLatchClear
+                  0x0014ec                  _PWM_Initialize
+                  0x0015b0                  _PWM_Deinitialize
+                  0x00164e                  _PWM_GeneratorEOCEventCallbackRegister
+                  0x001660                  _PWM_GeneratorEOCEventCallback
+                  0x001668                  _PWM_GeneratorTasks
+ .text            0x0016b2        0x69c build/default/production/mcc_generated_files/adc/src/adc1.o
+                  0x0016b2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Enable
+                  0x0016ba                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_Disable
+                  0x0016c2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerEnable
+                  0x0016ca                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_SoftwareTriggerDisable
+                  0x0016d2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ChannelSelect
+                  0x0016da                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ConversionResultGet
+                  0x001724                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IsConversionComplete
+                  0x0017b4                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_ResolutionSet
+                  0x0017d2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptEnable
+                  0x0017da                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptDisable
+                  0x0017e2                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptFlagClear
+                  0x0017ea                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_InterruptPrioritySet
+                  0x00180c                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptEnable
+                  0x001850                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptDisable
+                  0x001894                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptFlagClear
+                  0x0018ce                  build/default/production/mcc_generated_files/adc/src/adc1.o:_ADC1_IndividualChannelInterruptPrioritySet
+                  0x00196c                  _ADC1_Initialize
+                  0x001a26                  _ADC1_Deinitialize
+                  0x001abc                  _ADC1_SharedCorePowerEnable
+                  0x001b64                  _ADC1_PWMTriggerSourceSet
+                  0x001c08                  _ADC1_CommonCallbackRegister
+                  0x001c1a                  _ADC1_CommonCallback
+                  0x001c20                  _ADC1_Tasks
+                  0x001c3c                  _ADC1_ChannelCallbackRegister
+                  0x001c4e                  _ADC1_ChannelCallback
+                  0x001c58                  _ADC1_ChannelTasks
+                  0x001d34                  _ADC1_ComparatorCallbackRegister
+                  0x001d46                  _ADC1_ComparatorCallback
+ .text            0x001d4e        0x284 build/default/production/mcc_generated_files/uart/src/uart1.o
+                  0x001d4e                  _UART1_Initialize
+                  0x001d6e                  _UART1_Deinitialize
+                  0x001d84                  _UART1_Read
+                  0x001da2                  _UART1_Write
+                  0x001db8                  _UART1_IsRxReady
+                  0x001dcc                  _UART1_IsTxReady
+                  0x001dec                  _UART1_IsTxDone
+                  0x001e0e                  _UART1_TransmitEnable
+                  0x001e16                  _UART1_TransmitDisable
+                  0x001e1e                  _UART1_AutoBaudSet
+                  0x001e44                  _UART1_AutoBaudQuery
+                  0x001e5c                  _UART1_AutoBaudEventEnableGet
+                  0x001e74                  _UART1_ErrorGet
+                  0x001ece                  _UART1_BRGCountSet
+                  0x001ee4                  _UART1_BRGCountGet
+                  0x001f00                  _UART1_BaudRateSet
+                  0x001f62                  _UART1_BaudRateGet
+ .text            0x001fd2        0x114 build/default/production/mcc_generated_files/system/src/reset.o
+                  0x002084                  _RESET_CauseGet
+                  0x00208c                  _RESET_CauseHandler
+                  0x0020de                  _RESET_CauseClearAll
+ .text            0x0020e6         0xfe build/default/production/mcc_generated_files/system/src/dmt.o
+                  0x0020fe                  _DMT_Initialize
+                  0x002110                  _DMT_Enable
+                  0x00211a                  _DMT_PreClear
+                  0x002128                  _DMT_Clear
+                  0x00213e                  _DMT_IsWindowOpen
+                  0x002158                  _DMT_IsPreCleared
+                  0x002160                  _DMT_TimeoutCounterGet
+                  0x00217e                  _DMT_WindowTimeoutCounterGet
+                  0x00219c                  _DMT_StatusGet
+                  0x0021ae                  _DMT_CounterGet
+                  0x0021cc                  _DMT_EventCallbackRegister
+                  0x0021de                  _DMT_EventCallback
+ .text            0x0021e4         0x9a build/default/production/mcc_generated_files/timer/src/tmr1.o
+                  0x0021e4                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_PeriodGet
+                  0x0021ee                  build/default/production/mcc_generated_files/timer/src/tmr1.o:_TMR1_CounterGet
+                  0x0021f8                  _TMR1_Initialize
+                  0x00220c                  _TMR1_Deinitialize
+                  0x00221a                  _TMR1_Start
+                  0x002226                  _TMR1_Stop
+                  0x002230                  _TMR1_PeriodSet
+                  0x00223c                  _TMR1_InterruptPrioritySet
+                  0x00225a                  _TMR1_TimeoutCallbackRegister
+                  0x00226c                  _TMR1_TimeoutCallback
+                  0x002272                  _TMR1_PeriodCountSet
+ .text            0x00227e         0x76 build/default/production/main.o
+                  0x0022a0                  _Timer_Callback
+                  0x0022e6                  _main
+ .text            0x0022f4         0x4a build/default/production/mcc_generated_files/system/src/pins.o
+                  0x0022f4                  _PINS_Initialize
+ .text            0x00233e         0x48 build/default/production/mcc_generated_files/system/src/clock.o
+                  0x00233e                  _CLOCK_Initialize
 
-.dinit            0x00263e         0x3c
- .dinit           0x00263e         0x3c data_init
+.dinit            0x002386         0x3c
+ .dinit           0x002386         0x3c data_init
 
-.text             0x00267a         0xa8
- .text            0x00267a         0x34 build/default/production/mcc_generated_files/system/src/dmt_asm.o
-                  0x00267c                  _DMT_CalibratedCounterGet
-                  0x002690                  _DMT_Calibrate
- .text            0x0026ae         0x34 build/default/production/mcc_generated_files/system/src/interrupt.o
-                  0x0026ae                  _INTERRUPT_Initialize
-                  0x0026c8                  _INTERRUPT_Deinitialize
- .text            0x0026e2         0x24 build/default/production/mcc_generated_files/system/src/system.o
-                  0x0026ee                  _SYSTEM_Initialize
- .text            0x002706         0x1c build/default/production/mcc_generated_files/system/src/traps.o
-                  0x002706                  _TRAPS_halt_on_error
+.text             0x0023c2         0xa8
+ .text            0x0023c2         0x34 build/default/production/mcc_generated_files/system/src/dmt_asm.o
+                  0x0023c4                  _DMT_CalibratedCounterGet
+                  0x0023d8                  _DMT_Calibrate
+ .text            0x0023f6         0x34 build/default/production/mcc_generated_files/system/src/interrupt.o
+                  0x0023f6                  _INTERRUPT_Initialize
+                  0x002410                  _INTERRUPT_Deinitialize
+ .text            0x00242a         0x24 build/default/production/mcc_generated_files/system/src/system.o
+                  0x002436                  _SYSTEM_Initialize
+ .text            0x00244e         0x1c build/default/production/mcc_generated_files/system/src/traps.o
+                  0x00244e                  _TRAPS_halt_on_error
